@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Maatwebsite\Sidebar\SidebarServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -208,7 +209,15 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        // 
+        'Seo' => Helori\LaravelSeo\Facades\Seo::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        // 'PDF' => Barryvdh\DomPDF\Facade::class,
+        'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
+        'Flash' => Laracasts\Flash\Flash::class,
+        'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
     ],
 
 ];
